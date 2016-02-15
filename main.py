@@ -7,10 +7,10 @@ import time
 from collections import Counter
 
 def notice_mail(m_text):
-	HOST = 'mail.hsf-china.com'
-	SUBJECT = "This is From 101.95.223.30 OB_2 ARM_Core Notice"
-	TO = "qi.zheng@hsf-china.com"
-	FROM = "qi.zheng@hsf-china.com"
+	HOST = 'mail.ABC.com'
+	SUBJECT = "This is From 101.95.223.ABC OB_2 ARM_Core Notice"
+	TO = "bibnets@abc.com"
+	FROM = "bibnets@abc.com"
 	text = m_text
 	BODY = string.join((
 		"From:  %s" % FROM,
@@ -21,7 +21,7 @@ def notice_mail(m_text):
 	), "\r\n")
 	server = smtplib.SMTP()
 	server.connect(HOST,"25")
-	server.login("qi.zheng@hsf-china.com","80238023")
+	server.login("bibnets@abc.com","abc")
 	server.sendmail(FROM, [TO], BODY)
 	server.quit()
 	
