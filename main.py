@@ -8,7 +8,7 @@ from collections import Counter
 
 def notice_mail(m_text):
 	HOST = 'mail.ABC.com'
-	SUBJECT = "This is From 101.95.223.ABC OB_2 ARM_Core Notice"
+	SUBJECT = "This is From 10.10.1.1 OB_2 ARM_Core Notice"
 	TO = "bibnets@abc.com"
 	FROM = "bibnets@abc.com"
 	text = m_text
